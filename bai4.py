@@ -39,7 +39,7 @@ numbers = [1, 2, 3, 4, 1]
 # index_of_4 = numbers.index(4) # in ra chi so cua gt trong list
 # print(index_of_4)
 
-# reverse
+# reverse  dao nguoc list
 # numbers.reverse() # dao nguoc list
 
 # sort
