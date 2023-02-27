@@ -41,6 +41,7 @@ student = {
 # print(json.dumps(student, indent=4))
 
 # value = student["age"]  # key de lay value
+
 # value = student.get("id", "SV001")
 # print(value)
 
@@ -80,7 +81,7 @@ print(json.dumps(student, indent=4)) """
 student.clear()
 print(student) """
 
-""" # sum
+""" # sum khong cong hon tap
 lst = [[1, 2, 3, 4], [10, 29, -10]]  # neu lst[] thi sum=0
 
 total = sum(lst, [1])# list + list
@@ -100,3 +101,57 @@ s = ''.join(lst)
 # s = '-'.join(map(str, lst)) # convert lst thanh str ngan cach '-'
 
 print(s) """
+
+""" # bai 1
+art_student = {"John", "Max", "Anna", "Bob", "Obito"}
+math_student = {"Max", "Mery", "David", "Anna", "Naruto", "John"}
+print(art_student.intersection(math_student))  # pt trung gian
+print(art_student.difference(math_student))  # pt khac
+print(math_student.difference(art_student))  # pt khac
+print(art_student.symmetric_difference(math_student))  # all pt tru trung gian
+print(art_student.union(math_student))  # all pt """
+
+# bai2
+album_info = {
+    "album_name": "The Dark Side of the Moon",
+    "band": "Pink Floyd",
+    "release_year": 1973,
+    "track_list": [
+        "Speak to Me",
+        "Breathe",
+        "On the Run",
+        "Time",
+        "The Great Gig in the Sky",
+        "Money",
+        "Us and Them",
+        "Any Colour You Like",
+        "Brain Damage",
+        "Eclipse"
+    ]
+}
+# lay value cua key
+# print(album_info["album_name"])
+# print(album_info["release_year"])
+print(album_info.get("album_name"))
+print(album_info.get("release_year"))
+ #
+# album_info["release_year"] = "1971"
+# print(album_info["release_year"])
+
+# xoa di phan
+# album_info.pop("track_list")
+# del album_info["track_list"]
+
+# them key moi
+
+album_info["amount"] = 2000
+
+album_info.update(amount = 2000)
+print(json.dumps(album_info, indent=4))
+
+add_album = [("amount",2000)]
+album_info.update(add_album)
+print(json.dumps(album_info, indent=4))
+
+# lam trong
+album_info.clear()
