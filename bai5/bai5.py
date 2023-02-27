@@ -27,7 +27,7 @@ print(new_list) """
 print(friends[0:4])
 print(friends[3:])
 print(friends[0:])
-print(friends[::-1])
+print(friends[::-1 ])
 new_friends = friends.copy()
 print(new_friends)
 print(friends[1:]) """
