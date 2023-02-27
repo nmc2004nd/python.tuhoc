@@ -98,7 +98,7 @@ lst = ['4', '3', '2', '1']
 
 s = ''.join(lst)
 
-# s = '-'.join(map(str, lst)) # convert lst thanh str ngan cach '-'
+# s = '-'.join(map(str, lst)) # convert lst thanh str (or ham) ngan cach '-'
 
 print(s) """
 
