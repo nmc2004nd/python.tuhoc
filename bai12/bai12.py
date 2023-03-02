@@ -20,6 +20,7 @@ prevs = set()
 # Thêm các bộ phim mới
 def add_movie():
     # Nhập thông tin bộ phim
+    
     name            = input("Nhập vào tên bộ phim\t: ")
 
     while name in prevs:
@@ -143,11 +144,3 @@ while user_choise != "q":
 
     # Nhập sự lựa chọn của người dùng
     user_choise = input(USER_MENU)       
-
-
-           
-        
-
-
-
-
