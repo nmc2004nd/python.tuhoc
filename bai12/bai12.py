@@ -144,3 +144,21 @@ while user_choise != "q":
 
     # Nhập sự lựa chọn của người dùng
     user_choise = input(USER_MENU)       
+
+""" option = {
+    "a":    add_movie,
+    "l":    show_movies,
+    "s":    search_movie,
+    "x":    remove_movie,
+    "u":    update_movie
+}
+
+while 1 :
+    user_choice = input(USER_MENU)
+    if user_choice in option:
+        operation   = option[user_choice]
+        operation()
+    elif user_choice == "q":
+        break
+    else:
+        print("Nhập vào không hợp lệ, yêu cầu nhập lại!") """
